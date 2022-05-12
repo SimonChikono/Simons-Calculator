@@ -20,6 +20,7 @@ echo mult(10,2)."<br/>";
 function calculator(float $num1,string $opp,float $num2): float{
     if (!($opp == '+' or $opp == '-' or $opp == '/' or $opp == '*')){
         return 0;
+        
     }
     switch ($opp){
         case '+': return sum($num1,$num2);
