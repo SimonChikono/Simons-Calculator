@@ -1,5 +1,6 @@
 <?php
-function tree(): void 
+function tree(string $text): void 
 {
-    echo "hello function";
- }
+    echo $text;
+}
+tree("param3t3r");
