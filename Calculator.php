@@ -34,3 +34,17 @@ echo calculator(1,'+',2)."<br/>";
 echo calculator(1,'-',2)."<br/>";
 echo calculator(1,'/',2)."<br/>";
 echo calculator(1,'*',2)."<br/>";
+function calculatorv2 (float $num1,string $opp,float $num2):float
+{  
+    if(!in_array($opp,['+','-','*','/'])){
+        return 0 ; 
+     }
+    $function_name=[
+        '+'=>'addition',
+        '-'=>'difference',
+        '*'=>'multiplication',
+        '/'=>'division',
+        
+     ];
+    return $function_name [$opp]($num1,$num2);
+}
